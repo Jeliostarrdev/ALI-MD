@@ -81,37 +81,6 @@ reply(`❌ *Error Accurated !!*\n\n${e}`)
 
 
 cmd({
-    pattern: "kick",
-    react: "🦶🏻",
-    alias: ["remove"],
-    desc: "To Remove a participant from Group",
-    category: "group",
-    use: '.kick',
-    filename: __filename
-},
-async(conn, mek, m,{from, l, quoted, body, isCmd, command, mentionByTag , args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
-try{
-const msr = (await fetchJson('https://raw.githubusercontent.com/JawadYTX/KHAN-DATA/refs/heads/main/MSG/mreply.json')).replyMsg
-
-if (!isGroup) return reply(msr.only_gp)
-if (!isAdmins) { if (!isDev) return reply(msr.you_adm),{quoted:mek }} 
-if (!isBotAdmins) return reply(msr.give_adm)
-  
-		let users = mek.mentionedJid ? mek.mentionedJid[0] : mek.msg.contextInfo.participant || false;
-			if (!users) return reply("*Couldn't find any user in context* ❌")
-
-			await conn.groupParticipantsUpdate(from, [users], "remove")
-			await conn.sendMessage(from,{text:`_*Successfully Removed ✅*_`},{quoted:mek })
-	
-} catch (e) {
-await conn.sendMessage(from, { react: { text: '❌', key: mek.key } })
-console.log(e)
-reply(`❌ *Error Accurated !!*\n\n${e}`)
-}
-} )
-
-
-cmd({
     pattern: "promote",
     react: "🥏",
     alias: ["addadmin"],
@@ -408,50 +377,6 @@ async (conn, mek, m, { from, isGroup, isAdmins, isBotAdmins, args, q, reply }) =
     } catch (e) {
         console.error("Error updating group name:", e);
         reply("❌ Failed to update the group name. Please try again.");
-    }
-});
-
-cmd({
-    pattern: "kick",
-    react: "✈️",
-    alias: ["k", "remove"],
-    desc: "To Remove a participant from Group",
-    category: "group",
-    use: '.kick',
-    filename: __filename
-},
-async(conn, mek, m, { from, quoted, isGroup, senderNumber, botNumber, groupAdmins, isBotAdmins, reply }) => {
-    try {
-        if (!isGroup) return reply("*📛 This command can only be used in groups.*");
-
-        // Ensure only group admins can use this command
-        if (!groupAdmins.includes(senderNumber + "@s.whatsapp.net")) {
-            return reply("❌ Only group admins can use this command.");
-        }
-
-        if (!isBotAdmins) return reply("*📛 I need to be an admin to kick members.*");
-
-        // Fetch mentioned user or replied user
-        let users = quoted ? quoted.sender : (m.mentionedJid ? m.mentionedJid[0] : false);
-        if (!users) return reply("❌ *Couldn't find any user in context*");
-
-        // Prevent kicking bot itself
-        if (users === botNumber) return reply("❌ I can't kick myself!");
-
-        // Extract bot owner's number
-        const botOwner = conn.user.id.split(":")[0];
-
-        // Prevent kicking the owner
-        if (users === botOwner + "@s.whatsapp.net") return reply("*📛 You cannot kick the bot owner!*");
-
-        // Kick the user
-        await conn.groupParticipantsUpdate(from, [users], "remove");
-        await conn.sendMessage(from, { text: "_*Successfully Removed ✅_*" }, { quoted: mek });
-
-    } catch (e) {
-        await conn.sendMessage(from, { react: { text: '❌', key: mek.key } });
-        console.log(e);
-        reply(`❌ *Error Occurred !!*\n\n${e}`);
     }
 });
 

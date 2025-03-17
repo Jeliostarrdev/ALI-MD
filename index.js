@@ -42,6 +42,9 @@ const {
   const Crypto = require('crypto')
   const path = require('path')
   const prefix = config.PREFIX
+  const mode = config.MODE
+  const online = config.ALWAYS_ONLINE
+  const status = config.AUTO_STATUS_SEEN
   
   const ownerNumber = ['923003588997']
   
@@ -112,17 +115,20 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*╭──────────────●●►*
-> *➺ᴀʟɪ_ᴍᴅ-ᴠ1 ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ 𝐀ɭι̇ι̇*
-
-> *❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs ᴀʟɪ_ᴍᴅ*
-
-*https://whatsapp.com/channel/0029VaoRxGmJpe8lgCqT1T2h*
-
-*YOUR BOT ACTIVE NOW ENJOY♥️🪄*\n\n*PREFIX: ${prefix}*
-
-*╰──────────────●●►*`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://cdn.ironman.my.id/i/2du3i5.jpg` }, caption: up })
+  let up = `*𝐇𝐄𝐘 👋🏻 𝐋𝐄𝐆𝐄𝐍𝐃 𝐀𝐋𝐈-𝐌𝐃 𝐁𝐎𝐓*
+*𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘!*
+  
+╭───━━━━───━━━━──┉┈⚆
+│• 𝐓𝐘𝐏𝐄 .𝐌𝐄𝐍𝐔 𝐓𝐎 𝐒𝐄𝐄 𝐋𝐈𝐒𝐓 •
+│• 𝐁𝐎𝐓 𝐀𝐌𝐀𝐙𝐈𝐍𝐆 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒 •
+│• 🌸𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 : 𝐀ɭīī 𝐈ƞ̄x̷īīɖ𝛆̽
+│• ⏰𝐀𝐋𝐖𝐀𝐘𝐒 𝐎𝐍𝐋𝐈𝐍𝐄 : ${online}
+│• 📜𝐏𝐑𝐄𝐅𝐈𝐗 : ${prefix}
+│• 🪾𝐌𝐎𝐃𝐄 : ${mode}
+│• 🪄𝐒𝐓𝐀𝐓𝐔𝐒 𝐕𝐈𝐄𝐖𝐒 : ${status}
+│• 🫟𝐕𝐄𝐑𝐒𝐈𝐎𝐍 : 𝟑.𝟎.𝟎
+┗───━━━━───━━━━──┉┈⚆`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/LDLMs949/lordali.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -207,8 +213,8 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('923003588997');
-    let isCreator = [udp, jawad, config.DEV]
+    const ali = ('923003588997');
+    let isCreator = [udp, ali, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
 

@@ -10,7 +10,7 @@
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true,
-      "value": ""
+      "value": "ERATVDyR#dFCFtHdwQivDNBASJTWDCrcm_HuYqsIKPaynxXjENI0"
     },  
     
     "STICKER_NAME": {
@@ -36,7 +36,7 @@
     "ALWAYS_ONLINE": {
       "description": "Make it true if want always online.",
       "required": false,
-      "value": "false"  
+      "value": "true"  
     },    
   
     "AUTO_VOICE": {

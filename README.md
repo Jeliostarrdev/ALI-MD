@@ -47,14 +47,14 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 > **1. PAIR CODE SESSION ID**
 
-<a href='https://ali-md-web-qr-pair-z8r2.onrender.com' target="_blank">
+<a href='https://ali-md.onrender.com/' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
 
 > **2. PAIR CODE SESSION ID**
 
-<a href='https://ali-md-pair-69ad509c920e.herokuapp.com/' target="_blank">
+<a href='https://ali-md-72003ad89817.herokuapp.com' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
@@ -71,8 +71,14 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 <p style="text-align: center; font-size: 1.2em;">
 
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://tinyurl.com/2agqnfx5)
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+### <h4 align="">3. KOYEB</h4>
+<p style="text-align: center; font-size: 1.2em;">
+
 <p align="">
-<a href='https://deploy-web-five.vercel.app/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-heroku ‎ deploy-FF004D?style=for-the-badge&logo=heroku&logoColor=white'/< width=160 height=30/p></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repository=itx-ali-raza/ALI-MD&ports=3000&env[PREFIX]=.&env[SESSION_ID]=&env[ALWAYS_ONLINE]=false&env[MODE]=public&env[AUTO_STATUS_MSG]=Seen%20status%20by%20ALI-MD&env[AUTO_STATUS_REPLY]=false&env[AUTO_STATUS_SEEN]=true&env[AUTO_TYPING]=false&env[ANTI_LINK]=true&env[AUTO_REACT]=false&env[READ_MESSAGE]=false' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ### <h4 align="">2. TALKDROVE FREE</h4>
@@ -81,13 +87,6 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 <p align="">
 <a href='https://talkdrove.com/share-bot/11' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-TalkDrove ‎Deploy-6971FF?style=for-the-badge&logo=Github&logoColor=white'/< width=150 height=28/p></a>
   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-### <h4 align="">3. KOYEB</h4>
-<p style="text-align: center; font-size: 1.2em;">
-
-<p align="">
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=itx-alii-raza/ALI-MD&ports=3000&env[PREFIX]=.&env[SESSION_ID]=&env[ALWAYS_ONLINE]=false&env[MODE]=public&env[AUTO_STATUS_MSG]=Seen%20status%20by%20SUBZERO-MD&env[AUTO_STATUS_REPLY]=false&env[AUTO_STATUS_SEEN]=true&env[AUTO_TYPING]=false&env[ANTI_LINK]=true&env[AUTO_REACT]=false&env[READ_MESSAGE]=false' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ### <h4 align="">4. RAILWAY</h4>
 <p style="text-align: center; font-size: 1.2em;">
